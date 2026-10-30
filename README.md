@@ -1,56 +1,103 @@
-# Welcome to your Expo app 👋
+# TaskFlow – React Native Task Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+TaskFlow is a simple and user-friendly mobile task management application built with React Native and Expo. It helps users organize daily tasks, manage priorities, track progress, and stay productive.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+- **Add Tasks:** Create new tasks with custom titles.
+- **Edit Tasks:** Update existing task names.
+- **Delete Tasks:** Remove tasks with a confirmation prompt.
+- **Task Priorities:** Assign High, Medium, or Low priority to tasks.
+- **Task Status:** Mark tasks as completed or pending.
+- **Search Tasks:** Quickly find tasks using the search feature.
+- **Filter Tasks:** View All, Pending, or Completed tasks.
+- **Task Statistics:** Track total, pending, and completed tasks.
+- **Local Storage:** Save tasks using AsyncStorage.
+- **Offline Support:** Access locally saved tasks without an internet connection.
+- **Mobile-Friendly UI:** Clean, responsive design with a light pink and peach color theme.
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Technologies Used
 
-2. Start the app
+- React Native
+- Expo SDK 58
+- TypeScript
+- Expo Router
+- AsyncStorage
+- JavaScript / TypeScript
+- EAS Build
 
-   ```bash
-   npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+## 🚀 Getting Started
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Follow these steps to run the project locally.
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Clone the Repository
 
 ```bash
-npm run reset-project
+git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+### 2. Navigate to the Project
 
-### Other setup steps
+```bash
+cd my-app
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### 3. Install Dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Start the Development Server
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+You can scan the QR code using Expo Go or run the application on a supported emulator.
 
-Join our community of developers creating universal apps.
+## 📦 Android APK
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+TaskFlow has been built as an Android APK using Expo Application Services (EAS Build).
+
+To create another preview APK, use:
+
+```bash
+eas build --platform android --profile preview
+```
+
+The APK can be installed directly on a compatible Android device.
+
+## 💾 Data Storage
+
+TaskFlow uses AsyncStorage to store tasks locally on the device.
+
+- Tasks remain saved after closing and reopening the app.
+- Data is stored locally on the device.
+- Tasks do not automatically synchronize between different devices.
+- Uninstalling the app may remove locally stored data.
+
+## 🎯 Project Purpose
+
+The purpose of TaskFlow is to practice mobile application development and understand important React Native concepts, including:
+
+- Components and props
+- React Hooks (`useState` and `useEffect`)
+- State management
+- CRUD operations
+- Local data persistence
+- Navigation with Expo Router
+- Building and installing Android applications
+
+## 👩‍💻 Developer
+
+**Maryam Ayub**
+
+Software Engineering Student | Frontend & Mobile App Development
+
+GitHub: [maryamfew77-art](https://github.com/maryamfew77-art)
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
